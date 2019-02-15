@@ -1,0 +1,79 @@
+<div class="wrapper">
+    <div class="page-header section-dark" style="background-image: url('assets/img/abogados-banner.jpg')">
+        <div class="filter"></div>
+        <div class="content-center">
+            <div class="container">
+                <div class="title-brand">
+                    <div class="angular-logo">
+                        <img src="assets/img/angular2-logo.png" alt="">
+                    </div>
+                    <h1 class="presentation-title">Abogado</h1>
+                    <h2 style="font-weight: bold;">Jose Maria Llanos Medrano</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <app-components></app-components>
+        <div class="section section-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Contactanos</h2>
+                        <p class="description">Direccion: Calle Mercado - Galeria Paladium N° 1362 - Mezanine Of. V.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-image section-login" style="background-image: url('assets/img/login-image.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 ml-auto mr-auto">
+                        <div class="card card-register">
+                            <form class="register-form">
+                                <label>Nombre Completo</label>
+                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-badge"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Nombre Completo" (focus)="focus=true" (blur)="focus=false">
+                                </div>
+                                <label>Correo</label>
+                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===false}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-email-85"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Email" (focus)="focus=false" (blur)="focus=false">
+                                </div>
+                                <label>Teléfono</label>
+                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===false}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-layout-11"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Teléfono" (focus)="focus=false" (blur)="focus=false">
+                                </div>
+                                <label>Asunto</label>
+                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-box"></i>
+                                        </span>
+                                    </div>
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+                                <button class="btn btn-danger btn-block btn-round">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
